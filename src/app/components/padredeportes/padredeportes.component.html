@@ -1,6 +1,10 @@
 <div>
   <h1>PADRE DEPORTES</h1>
+  <h2 style="color:darkblue;">{{mensaje}}</h2>
   <div *ngFor="let deporte of deportes">
-    <app-hijodeportes [sport]="deporte"></app-hijodeportes>
+    <!-- (seleccionarDeporteHijo) será el nombre que tenga la funcion en los otro componentes -->
+    <app-hijodeportes [sport]="deporte" (seleccionarDeporteHijo)="seleccionarDeportePadre($event)">
+
+    </app-hijodeportes>
   </div>
 </div>
