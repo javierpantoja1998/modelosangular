@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ListaproductosComponent } from './components/listaproductos/listaproductos.component';
 import { HijococheComponent } from './components/hijocoche/hijocoche.component';
 import { PadrecochesComponent } from './components/padrecoches/padrecoches.component';
+import { PadredeportesComponent } from './components/padredeportes/padredeportes.component';
+import { HijodeportesComponent } from './components/hijodeportes/hijodeportes.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { PadrecochesComponent } from './components/padrecoches/padrecoches.compo
     ListaproductosComponent,
     HijococheComponent,
 
-    PadrecochesComponent
+    PadrecochesComponent,
+     PadredeportesComponent,
+     HijodeportesComponent
   ],
   imports: [
     BrowserModule,
