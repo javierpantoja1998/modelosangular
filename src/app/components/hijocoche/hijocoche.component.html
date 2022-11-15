@@ -1,0 +1,23 @@
+<div>
+  <h1 style="color:dodgerblue">
+    {{car.marca}}, {{car.modelo}}
+  </h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/LAMBO_HURACAN.jpg"/>
+
+  <h2 [ngClass]="{
+      verde:car.estado == true,
+      rojo: car.estado == false
+  }">
+    {{mensaje}}
+  </h2>
+
+  <h2>
+    Velocidad: {{car.velocidad}} KM/H
+  </h2>
+  <button (click)="encenderCoche()">
+    START/STOP
+  </button>
+  <button (click)="acelerarCoche()">
+    ACELERAR
+  </button>
+</div>
